@@ -4,8 +4,8 @@ import { useAuth } from "../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 
 export default function Login() {
-  const emailRef = useRef()
-  const passwordRef = useRef()
+  const emailRef = useRef("")
+  const passwordRef = useRef("")
   const { login } = useAuth()
   const [error, setError] = useState("")
   const [loading, setLoading] = useState(false)
